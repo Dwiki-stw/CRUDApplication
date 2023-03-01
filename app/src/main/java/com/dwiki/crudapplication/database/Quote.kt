@@ -9,11 +9,11 @@ data class Quote(
 
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")
-    val id:String,
+    var id:Int,
 
     @ColumnInfo(name = "name")
-    val name:String,
+    var name:String? = null,
 
-    @ColumnInfo(name = "quote")
-    val quote:String
+    @ColumnInfo(name = "text")
+    var text:String? = null
 )
